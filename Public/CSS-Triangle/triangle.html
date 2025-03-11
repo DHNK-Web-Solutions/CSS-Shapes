@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Triangle</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <!-- Shape Code -->  
+  <section>
+    <div class="box">
+    <h1>Triangle</h1>
+      <div class="triangle1"></div>
+      <div class="triangle2"></div>
+      <div class="triangle3"></div>
+      <div class="triangle4"></div>
+      <div class="triangle5"></div>
+
+    </div>
+  </section> 
+  <!-- End of Shape Code -->  
+  <!-- Code Section -->
+  <section class="code">
+    <pre>
+      <code>
+        
+      </code>
+    </pre>
+  </section> 
+</body>
+</html>
+/* HTML: <div class="triangle"></div> */
+.triangle {
+  --b:25px; /* control the border thickness */
+
+  width: 180px;
+  aspect-ratio: 1/cos(30deg);
+  clip-path: polygon(50% 0,100% 100%,0 100%,50% 0,50% var(--b),calc(var(--b)*cos(30deg)) calc(100% - var(--b)/2),calc(100% - var(--b)*cos(30deg)) calc(100% - var(--b)/2),50% var(--b));
+  background: linear-gradient(45deg,#FA6900,#C02942);
+}
+/* HTML: <div class="triangle"></div> */
+.triangle {
+  --b:25px; /* control the border thickness */
+
+  width: 180px;
+  aspect-ratio: 1/cos(30deg);
+  clip-path: polygon(50% 100%,100% 0,0 0,50% 100%,50% calc(100% - var(--b)),calc(var(--b)*cos(30deg)) calc(var(--b)/2),calc(100% - var(--b)*cos(30deg)) calc(var(--b)/2),50% calc(100% - var(--b)));
+  background: linear-gradient(45deg,#FA6900,#C02942);
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Pentagon</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <!-- Shape Code -->  
+  <section>
+    <div class="box">
+    <h1>Pentagon</h1>
+      <div class="pentagon"></div>
+    </div>
+  </section> 
+  <!-- End of Shape Code -->  
+  <!-- Code Section -->
+  <section class="code">
+    <pre>
+      <code>
+        .pentagon {
+          margin: 10px auto;
+          height: var(--shape-height);
+          width: var(--shape-width);
+          background-color: var(--shape-color);
+          clip-path: polygon(
+            50% 5%,
+            100% 40%,
+            85% 100%,
+            15% 100%,
+            0 40%
+          )
+        }
+      </code>
+    </pre>
+  </section> 
+</body>
+</html>

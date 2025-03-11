@@ -1,0 +1,31 @@
+:root {
+  --shape-color: #F8CA00
+}
+#section1 {
+  /* border: 1px solid; */
+  margin: 20px 50px;
+}
+
+h1 {
+  text-align: center;
+}
+.star {
+  margin: 40px auto;
+  height: 200px;
+  aspect-ratio: 1/1;
+  clip-path: polygon(
+    50% 0, 
+    79% 91%, 
+    2% 35%, 
+    98% 35%, 
+    21% 91%);
+  background-color: var(--shape-color);
+}
+#section2 {
+  border: 1px solid;
+  margin: 20px 50px;
+  border-radius: 10px;
+}
+.code {
+  padding: 0 20px;
+}

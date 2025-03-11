@@ -1,0 +1,33 @@
+:root {
+  --shape-height: 200px;
+  --shape-width: 200px;
+  --shape-color: orange;
+}
+.box {
+  /* height: 90vh; */
+  /* border: 1px solid; */
+  margin: 20px 50px;
+  /* border-radius: 50px; */
+}
+h1 {
+  text-align: center;
+}
+.pentagon {
+  margin: 10px auto;
+  height: var(--shape-height);
+  width: var(--shape-width);
+  background-color: var(--shape-color);
+  clip-path: polygon(
+    50% 5%,
+    100% 40%,
+    85% 100%,
+    15% 100%,
+    0 40%
+  )
+}
+.code {
+  border: 1px solid;
+  margin: 20px 50px;
+  border-radius: 10px;
+  padding: 0;
+}
